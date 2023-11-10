@@ -1,32 +1,41 @@
-# S3X-B3B4S-file-decryption
-A way to scriptkiddie ransomware decryption.
+# Uploader et Gestionnaire de Fichiers PHP
 
-## Checking my Honeypot
-I found skids playing with some public exploits in my area.
+Ce script PHP constitue un outil d'upload et de gestion de fichiers simple. Il est conçu pour fournir une interface utilisateur conviviale pour télécharger et gérer différents types de fichiers.
 
-While checking the web directory i found all files with a ".crypt" extension, wow is this a ransomware attack, are my files really got crypted ? noo bruh its just another very bad/ugly attack coming from a group of kids lol.
+## Fonctionnalités
 
-![crypt.php](https://raw.githubusercontent.com/9aylas/S3X-B3B4S-file-decryption/main/01.png)
+1. **Uploader de Fichiers :** Permet aux utilisateurs de télécharger des fichiers depuis leur appareil vers le serveur.
 
-![extension](https://raw.githubusercontent.com/9aylas/S3X-B3B4S-file-decryption/main/02.png)
+2. **Gestionnaire de Fichiers :** Affiche une liste des fichiers et dossiers présents sur le serveur.
 
-### Inside the code : 
-- The skids are only using a simple base64 to their code, why tf lol? well ok continue ...
-![lol](https://raw.githubusercontent.com/9aylas/S3X-B3B4S-file-decryption/main/03.png)
+3. **Sécurité :** Un mot de passe est requis pour accéder aux sous-dossiers, garantissant un certain niveau de sécurité.
 
-- Ook now stop, its a compression, they even don't know what is a real encryption algorithm ...
-![lol](https://raw.githubusercontent.com/9aylas/S3X-B3B4S-file-decryption/main/04.png)
-- #### Mission accomplished : i won 0,001% of fun & waste of time.
+## Comment Utiliser
 
-## Decryption using php
-```php
-$decrypted = gzinflate(file_get_contents("file.ext.crypt"));
-```
+1. **Uploader de Fichiers :** 
 
-## Decryption using python
-```python
-import zlib
-data = open("file.ext.crypt", "rb").read()
-decoded = zlib.decompress(data, -zlib.MAX_WBITS)
-print(decoded)
-```
+   - Accédez à la page principale.
+   - Utilisez le formulaire d'upload pour sélectionner et télécharger des fichiers.
+
+2. **Gestionnaire de Fichiers :**
+
+   - Explorez la liste des fichiers et dossiers.
+   - Cliquez sur les dossiers pour les dérouler et accéder à leur contenu.
+
+3. **Mot de Passe :**
+
+   - Pour accéder aux sous-dossiers, un mot de passe est requis.
+   - Le mot de passe est défini dans le fichier `.env` sous le nom `pass`.
+   - Le webPath est défini dans le fichier `.env` sous le nom `path`.
+
+## Configuration
+
+Assurez-vous que le fichier `.env` contient le mot de passe nécessaire, le path web et est correctement configuré. En cas d'erreur, référez-vous aux messages d'erreur affichés.
+
+---
+
+**Développé par TRHACKNON**
+
+Pour un usage éducatif uniquement.
+
+&copy; 2023
