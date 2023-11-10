@@ -1,28 +1,40 @@
-# Uploader et Gestionnaire de Fichiers PHP
+# File Manager by TRHACKNON
 
-Ce script PHP constitue un outil d'upload et de gestion de fichiers simple. Il est conçu pour fournir une interface utilisateur conviviale pour télécharger et gérer différents types de fichiers.
+## Overview
 
-## Fonctionnalités
+Welcome to the File Manager developed by TRHACKNON. This tool provides a user-friendly interface for listing files and directories on a server. It also allows you to view the content of specific files.
 
-1. **Uploader de Fichiers :** Permet aux utilisateurs de télécharger des fichiers depuis leur appareil vers le serveur.
+## Features
 
-2. **Gestionnaire de Fichiers :** Affiche une liste des fichiers et dossiers présents sur le serveur.
+- **Directory Navigation:** Easily navigate through directories and subdirectories.
+- **File Listing:** View a list of files with supported extensions.
+- **File Content Viewer:** Check the content of supported files.
+- **Password Protection:** Secure access to subdirectories with a password.
 
-3. **Sécurité :** Un mot de passe est requis pour accéder aux sous-dossiers, garantissant un certain niveau de sécurité.
+## Getting Started
 
-## Comment Utiliser
+1. Clone the repository.
+   ```bash
+   git clone https://github.com/tucommenceapousser/dirlister
+   ```
 
-1. **Uploader de Fichiers :** 
+2. Upload the files to your server.
 
-   - Accédez à la page principale.
-   - Utilisez le formulaire d'upload pour sélectionner et télécharger des fichiers.
+3. Ensure PHP is configured on your server.
 
-2. **Gestionnaire de Fichiers :**
+4. Access the tool through your browser.
 
-   - Explorez la liste des fichiers et dossiers.
-   - Cliquez sur les dossiers pour les dérouler et accéder à leur contenu.
+PASSWORD = trkntrkn
 
-3. **Mot de Passe :**
+## Usage
+
+- Open `dirlister.php` in your browser.
+- Navigate through directories.
+- Enter the password to access protected subdirectories.
+- Click on files to view their content.
+
+
+**Mot de Passe :**
 
    - Pour accéder aux sous-dossiers, un mot de passe est requis.
    - Le mot de passe est défini dans le fichier `.env` sous le nom `pass`.
@@ -32,10 +44,15 @@ Ce script PHP constitue un outil d'upload et de gestion de fichiers simple. Il e
 
 Assurez-vous que le fichier `.env` contient le mot de passe nécessaire, le path web et est correctement configuré. En cas d'erreur, référez-vous aux messages d'erreur affichés.
 
----
 
-**Développé par TRHACKNON**
+## Screenshots
 
-Pour un usage éducatif uniquement.
+![Screenshot](Screenshot_2023-11-09-10-03-32-900_com.android.chrome-edit.jpg)
 
-&copy; 2023
+## Credits
+
+Developed by [TRHACKNON](https://github.com/trhacknon) for educational use only.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
